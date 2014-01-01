@@ -34,3 +34,12 @@ Aplikácia implementuje 3 ad-hoc obrazovky
 ---
 - Výpočet vymysleného "rizika" pri vložení výšky úveru v poslednom kroku
 
+
+---
+Responzívny design
+
+[screen](http://xipic.eu/ufiles/ivla5mko_SC20131230-224732.png)
+[screen](http://xipic.eu/ufiles/1cmhdewc_SC20131230-224804.png)
+
+
+
