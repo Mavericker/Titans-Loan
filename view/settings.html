@@ -1,0 +1,15 @@
+
+<div ng-repeat="item in _items" class="settings-line">
+
+    <!-- Setup pretty options. Assign first item on init as default selected and ng-model to dummy for angular satisfaction -->
+    <select ng-options="option.title for option in options track by option.name" ng-change="changeSettings($index, selectedValue)" ng-model="selectedValue" ng-init="selectedValue = item.selectedValue || options[0]"  title='Choose one of the following...' be-pretty>
+
+    </select>
+    <button type="button" ng-click="removeSettings($index)" class="btn btn-default"><i class="glyphicon glyphicon-remove"></i> Odstrániť</button>
+</div>
+<div ng-if="_items.length == 0">
+    Klient nemá zadané žiadne vlastnosti. Prosím pridajte vlastnosť kliknutím na tlačidlo "Pridať vlastnosť"
+</div>
+<br>
+
+<button ng-click="addSettings()" type="button" class="btn btn-primary">Pridať vlastnosť</button>

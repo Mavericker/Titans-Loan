@@ -1,0 +1,28 @@
+/* CSS Document */
+body {
+    padding: 45px 20px 20px 20px;
+    text-align:center;
+    background:url('../assets/bg.png');
+    color:#fff;
+}
+#navigation
+{
+    margin:0 auto;
+    margin-bottom:25px;
+}
+div.settings-line .btn
+{
+    vertical-align:top;
+}
+.rating-result
+{
+    font-size:52px;
+
+}
+div.divider
+{
+    margin-bottom:30px;
+    width:100%;
+    display:block;
+    overflow:hidden;
+}

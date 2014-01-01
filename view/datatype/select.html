@@ -1,0 +1,9 @@
+<div class="form-group col-md-offset-3 col-md-6" >
+    <label class="col-md-4 control-label">{{item.selectedValue.title}}</label>
+    <div class="col-md-8">
+        <p class="form-control-static"><select ng-model="selectedValue" ng-model="selectedValue"  ng-change="changeValue($index, selectedValue)" ng-init="selectedValue = item.val" class="form-control">
+
+                <option ng-repeat="option in item.selectedValue.values" ng-selected="option.name == selectedValue" ng-value="option.name">{{option.title}}</option>     
+            </select></p>
+    </div>
+</div>

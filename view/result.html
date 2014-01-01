@@ -1,0 +1,28 @@
+<div ng-if="_items.length == 0">
+    Pre výpočet je nutné zadať vlasnosti klienta
+    <br>
+    <a href="#/settings"  class="btn btn-primary">Prejsť na vlastnosti</a>
+</div>
+<div class="form-group col-md-offset-3 col-md-6"  ng-if="_items.length > 0">
+    <label class="col-md-4 control-label">Výška úveru <br>(72 mesiacov) </label>
+    <div class="col-md-4">
+        <p class="form-control-static"><input type='text' ng-change="doUpdate(loanValue)" ng-model="loanValue" class="form-control"></p>
+    </div>
+</div>
+<div class='col-md-3'></div>
+<div class='divider'></div>
+<div class='col-md-12'>
+    <div class='col-md-offset-3 col-md-6'>
+        <span class="label label-{{ratingClass}} rating-result" ng-if="rating > 0">{{rating * 10| number:2}} %</span>
+    </div>
+</div>
+<div class='divider'></div>
+<div class='col-md-12'>
+    <div ng-repeat="item in _items" class="settings-line col-md-6 col-md-offset-3">
+        <block ng-switch on="item.selectedValue.type" ng-if="item.val && item.selectedValue.name != 'empty'">
+            <div ng-switch-when="select" ng-init="title = getValueTitleByName(item.selectedValue.name, item.val)"><h4>{{item.selectedValue.title}} <span class="label label-info">{{title}}</span></h4></div>
+            <div ng-switch-default><h4>{{item.selectedValue.title}} <span class="label label-info">{{item.val}}</span></h4></div>
+        </block>
+    </div>
+</div>    
+

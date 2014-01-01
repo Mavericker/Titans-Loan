@@ -1,0 +1,21 @@
+<ng-form   role="form" name="dataForm">
+    <div ng-repeat="item in _items">
+        <div ng-if="item.selectedValue && item.selectedValue.name != 'empty'" class='col-md-12'>   
+            <div ng-include="'/view/datatype/' + item.selectedValue.type + '.html'"></div>
+        </div>
+        <div class="col-md-3">&nbsp;</div>
+    </div>
+
+
+</ng-form>
+
+<div ng-if="_items.length == 0">
+    Pre pokračovanie je nutné zadať vlasnosti klienta
+    <br>
+    <a href="#/settings"  class="btn btn-primary">Prejsť na vlastnosti</a>
+</div>
+<div ng-if="_items.length > 0">
+    <a href="#/result"  class="btn btn-primary">Vypočítať riziko</a>
+</div>
+<br>
+
