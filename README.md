@@ -38,8 +38,8 @@ Aplikácia implementuje 3 ad-hoc obrazovky
 ---
 Responzívny design
 
-[screen](http://xipic.eu/ufiles/ivla5mko_SC20131230-224732.png)
-[screen](http://xipic.eu/ufiles/1cmhdewc_SC20131230-224804.png)
+![alt text](http://xipic.eu/ufiles/ivla5mko_SC20131230-224732.png "Obrazovka 1")
+![alt text](http://xipic.eu/ufiles/1cmhdewc_SC20131230-224804.png "Obrazovka 3")
 
 
 
