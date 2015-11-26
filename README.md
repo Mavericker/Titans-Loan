@@ -13,7 +13,6 @@ Aplikácia implementuje 3 ad-hoc obrazovky
 
 **Live verzia** : http://titans.xvioli.com
 
-
  - Dynamické pridávanie možností do select boxu
   [providers.js:104](https://github.com/Mavericker/Titans-Loan/blob/master/js/providers/providers.js#L104)
   
